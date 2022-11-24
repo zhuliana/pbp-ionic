@@ -1,0 +1,17 @@
+ion-button[color="dark"] {
+    text-transform: initial;
+}
+
+ion-button[fill="clear"] {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+ion-button[type="submit"] {
+    margin-top: 32px;
+}
+
+.flex-center {
+    position: relative;
+    height: 70%;
+}
