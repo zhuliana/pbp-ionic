@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "PBP-Ionic",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
