@@ -1,9 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import * as internal from 'stream';
+
+export interface iGedung {
+  id: number;
+  nama: string;
+  prodi: string;
+}
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ApiService {
 
   constructor(

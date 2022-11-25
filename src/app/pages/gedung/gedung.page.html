@@ -1,13 +1,30 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Gedung</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <ion-fab  slot="fixed" vertical="bottom" horizontal="end" >
-    <ion-fab-button>
+    <ion-fab-button [routerLink]="['/add-gedung']" routerLinkActive="router-link-active">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+  <div class="container">
+    <ion-card class="card-container" *ngFor="let gedung_value of gedungs">
+      <ion-card-header>
+        <ion-card-title>{{ gedung_value.namaGedung }}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        {{ gedung_value.prodi }}
+      </ion-card-content>
+    
+      <ion-button fill="clear" color="primary" [routerLink]="['/edit-gedung/',gedung_value.id]"
+      routerLinkActive="router-link-active">Edit</ion-button>
+      <ion-button fill="clear"color="danger" (click)="deleteGedung(gedung_value.idGedung)">Delete</ion-button>
+    </ion-card>
+  </div>
 </ion-content>
+
+

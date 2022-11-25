@@ -2,4 +2,10 @@ ion-fab {
     bottom: 32px;
     right: 32px;
 }
-  
+
+.container {
+    margin-left: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
