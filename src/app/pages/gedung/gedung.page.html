@@ -10,8 +10,8 @@
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-  <div class="container">
-    <ion-card class="card-container" *ngFor="let gedung_value of gedungs">
+  <div>
+    <ion-card *ngFor="let gedung_value of gedungs">
       <ion-card-header>
         <ion-card-title>{{ gedung_value.namaGedung }}</ion-card-title>
       </ion-card-header>
@@ -19,10 +19,11 @@
       <ion-card-content>
         {{ gedung_value.prodi }}
       </ion-card-content>
-    
+      <div class="container-button">
       <ion-button fill="clear" color="primary" [routerLink]="['/edit-gedung/',gedung_value.id]"
       routerLinkActive="router-link-active">Edit</ion-button>
       <ion-button fill="clear"color="danger" (click)="deleteGedung(gedung_value.idGedung)">Delete</ion-button>
+      </div>
     </ion-card>
   </div>
 </ion-content>

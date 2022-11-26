@@ -17,8 +17,8 @@
             <ion-input type="password"></ion-input>
         </ion-item>
         <ion-button size="small" fill="clear" color="dark" >Forgot Password?</ion-button>
-        <ion-button expand="block" >Login</ion-button>
-        <ion-button expand="block" fill="clear">Register</ion-button>
+        <ion-button expand="block" [routerLink]="['/gedung']" routerLinkActive="router-link-active">Login</ion-button>
+        <ion-button expand="block" fill="clear" [routerLink]="['/register']" routerLinkActive="router-link-active">Register</ion-button>
       </ion-card-content>
   </ion-card>
   </div>

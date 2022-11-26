@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'ruangan',
     loadChildren: () => import('./pages/ruangan/ruangan.module').then( m => m.RuanganPageModule)
+  },  {
+    path: 'add-gedung',
+    loadChildren: () => import('./pages/add-gedung/add-gedung.module').then( m => m.AddGedungPageModule)
   },
+
 
 
 ];

@@ -3,9 +3,9 @@ ion-fab {
     right: 32px;
 }
 
-.container {
-    margin-left: 16px;
+.container-button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: right;
 }
